@@ -5,6 +5,7 @@ GIS hotspot feeds, mule account graph networks, and law enforcement actions.
 """
 
 import os
+import hashlib
 from fastapi import FastAPI, Query, HTTPException
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse, JSONResponse, FileResponse
@@ -209,4 +210,12 @@ CCTV PRESERVATION     : {inc['actionable_intelligence'].get('cctv_preservation_o
 Generated automatically by CYBER-DRISHTI Predictive Analytics Framework.
 Confidential - For Law Enforcement and Banking Nodal Use Only.
 """
+    
+    # Generate Salted SHA-256 Hash for Evidence Chain of Custody
+    salt = "I4C_EVIDENCE_SALT_2026"
+    raw_content = f"{dossier}{salt}"
+    dossier_hash = hashlib.sha256(raw_content.encode('utf-8')).hexdigest()
+    
+    dossier += f"CRYPTOGRAPHIC EVIDENCE HASH (SHA-256):\n{dossier_hash}\n================================================================================\n"
+
     return {"incident_id": incident_id, "dossier_text": dossier}

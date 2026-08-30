@@ -67,7 +67,7 @@
 
 * **Frontend & Visual Analytics:** Vanilla HTML5, CSS3 Tokens (Zero-Build System), Leaflet.js (Tactical GIS Heatmap), Vis.js (Interactive Force-Directed Mule Graphs).
 * **Backend & API Layer:** Python 3.10+, FastAPI (Asynchronous ASGI Engine, sub-125ms inference latency), Uvicorn Server, Pydantic v2.
-* **AI/ML & Mathematical Models:** ST-DBSCAN Spatio-Temporal Clustering, Cox Accelerated Failure Time (AFT) Model, Shannon Information Entropy, NumPy.
+* **AI/ML & Mathematical Models:** ST-DBSCAN Spatio-Temporal Clustering, Cox Accelerated Failure Time (AFT) Model, Shannon Information Entropy, Pure Python Math.
 * **Security & Statutory Compliance:** Salted SHA-256 Hashing, DPDP Act 2023 Tokenizer (`XXXX-XXXX-1234`), CFCFRMS & CCTNS Dispatch Protocols.
 
 #### 2. Methodology and Process for Implementation
