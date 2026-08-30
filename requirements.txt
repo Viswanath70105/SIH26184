@@ -1,0 +1,6 @@
+# CYBER-DRISHTI // SIH 2026 PS-26184
+# Core Python Backend Dependencies
+
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+pydantic>=2.6.0
